@@ -1,0 +1,6 @@
+# 站点配置说明（供自己备忘，GitHub Pages 不读取此文件）
+site:
+  title: 我的博客
+  author: Leo            # 改成你的名字
+  url: https://你的用户名.github.io/my-blog/
+  theme_color: "#0969da"

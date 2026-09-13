@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git 入门：程序员的第一课 · 我的博客</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">📝 我的博客</a>
+      <nav class="nav">
+        <a href="../index.html">首页</a>
+        <a href="hello-world.html" class="active">文章</a>
+        <a href="../about.html">关于</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="切换深色模式">🌙</button>
+    </div>
+  </header>
+
+  <main class="container article">
+    <div class="article-header">
+      <h1>Git 入门：程序员的第一课</h1>
+      <div class="post-meta">
+        <time>2026-09-10</time>
+        <span class="tag-sm">技术</span>
+        <span>约 5 分钟</span>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>Git 是每个程序员的必备技能。这篇笔记记录我最常用的命令，方便随时翻阅。</p>
+
+      <h2>最常用的操作流</h2>
+      <pre><code>git status              # 查看当前状态
+git add .               # 暂存所有修改
+git commit -m "描述"    # 提交到本地仓库
+git push origin main    # 推送到 GitHub</code></pre>
+
+      <h2>把本地项目传到 GitHub</h2>
+      <pre><code>git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/用户名/仓库名.git
+git push -u origin main</code></pre>
+
+      <h2>常用技巧</h2>
+      <ul>
+        <li><code>git log --oneline</code>：一行一条查看提交历史；</li>
+        <li><code>git checkout -b feature-x</code>：新建并切换分支；</li>
+        <li><code>git pull</code>：拉取远程最新代码，避免冲突；</li>
+        <li>提交信息写清楚「做了什么」，三个月后的你会感谢现在的你。</li>
+      </ul>
+
+      <blockquote>记住：Git 不会弄丢你已经 commit 的代码，所以勤提交、勤推送。</blockquote>
+    </div>
+
+    <a href="../index.html" class="back-link">← 返回首页</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Leo · 用 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 搭建</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
