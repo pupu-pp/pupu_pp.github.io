@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的博客 · 记录与思考</title>
+  <meta name="description" content="一个关于技术、生活与思考的个人博客" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">📝 我的博客</a>
+      <nav class="nav">
+        <a href="index.html" class="active">首页</a>
+        <a href="posts/hello-world.html">文章</a>
+        <a href="about.html">关于</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="切换深色模式">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero 区域 -->
+  <section class="hero">
+    <div class="container">
+      <h1>你好，我是 <span class="accent">Leo</span> 👋</h1>
+      <p class="hero-sub">在这里记录技术笔记、生活感悟和一些不成熟的思考。</p>
+      <div class="hero-tags">
+        <span class="tag">#前端开发</span>
+        <span class="tag">#读书笔记</span>
+        <span class="tag">#效率工具</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 文章列表 -->
+  <main class="container main-content">
+    <div class="section-head">
+      <h2>最新文章</h2>
+      <input id="search-input" type="search" placeholder="🔍 搜索文章标题或标签…" />
+    </div>
+
+    <div id="post-list" class="post-list">
+
+      <article class="post-card" data-title="我的第一篇博客：为什么开始写作" data-tags="随笔 博客">
+        <a href="posts/hello-world.html">
+          <div class="post-meta"><time>2026-09-13</time><span class="tag-sm">随笔</span></div>
+          <h3>我的第一篇博客：为什么开始写作</h3>
+          <p>写作是最便宜的思考工具。搭建这个博客花了我一个下午，但希望它能陪我很多年……</p>
+        </a>
+      </article>
+
+      <article class="post-card" data-title="Git 入门：程序员的第一课" data-tags="技术 Git">
+        <a href="posts/git-basics.html">
+          <div class="post-meta"><time>2026-09-10</time><span class="tag-sm">技术</span></div>
+          <h3>Git 入门：程序员的第一课</h3>
+          <p>从 add、commit 到 push，一篇讲清楚 Git 最常用的操作，以及如何把项目托管到 GitHub……</p>
+        </a>
+      </article>
+
+      <article class="post-card" data-title="我的 2026 效率工具清单" data-tags="工具 效率">
+        <a href="#" class="placeholder">
+          <div class="post-meta"><time>2026-09-01</time><span class="tag-sm">工具</span></div>
+          <h3>我的 2026 效率工具清单</h3>
+          <p>（示例占位文章——把链接换成你自己的文章即可）写下我这一年真正每天在用的 7 个工具……</p>
+        </a>
+      </article>
+
+    </div>
+    <p id="no-result" class="no-result" hidden>没有找到匹配的文章 🙈</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Leo · 用 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 搭建</p>
+      <p class="footer-links">
+        <a href="https://github.com/你的用户名" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="mailto:you@example.com">Email</a> ·
+        <a href="index.html">RSS(占位)</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
